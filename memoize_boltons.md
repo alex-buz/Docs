@@ -93,6 +93,19 @@ Context manager helps to make sure that file-writes are protected against corrup
 **slugify()**: modify a string to be suitable, e.g., for use as a filename, by removing characters and symbols that would be invalid in a filename.
 
 
+## bytes2human
+
+```
+>>> bytes2human(1e6)
+'977K'
+>>> bytes2human(20)
+'20B'
+>>> bytes2human(1024 * 1024)
+'1024K'
+>>> bytes2human(2e4, ndigits=2)
+'19.53K'
+```
+
 
 
 

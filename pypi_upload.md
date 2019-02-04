@@ -7,6 +7,6 @@ $ flit init
 __version__ = '1.0.0'
 ```
 
-flit build
-flit publish
+    flit build
+    flit publish
 

@@ -1,3 +1,4 @@
+```Python
 # cython: boundscheck=False, cdivision=True
 import array
 import threading  1
@@ -33,3 +34,19 @@ thread1.join()  9
 thread2.join()
 
 print(a[:5])
+```
+```
+$ cythonize -b -i -a cythondemopll.pyx
+```
+
+Create exec
+```
+$ cython --embed cythondemopll.pyx
+```
+
+
+
+```
+$ gcc `python3.5-config --cflags` cythondemopll.c \
+      `python3.5-config --ldflags` -o cythondemopll
+```
